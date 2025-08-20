@@ -14,39 +14,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1755087523
+  lastShownTimestamp: 1755660443
   lastUpdateResponse:
-    version: 1.00
+    version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1755087523
+  checkedLastUpdateTimestamp: 1755660443
   lastQOTDResponse:
-    questionId: 163
-    questionText: What is the purpose of Unity Hub?
-    answerA: Provide a space for the community to interact
-    answerB: Manage different Unity versions and Projects
-    answerC: Dashboard for Unity services
+    questionId: 212
+    questionText: 'What is the value stored in percentage?
+
+      <p>int health =
+      25;</p>
+
+      <p>int healthMax = 100;</p>
+
+      <p>float percentage = health
+      / healthMax;</p>'
+    answerA: 0.25f
+    answerB: 0
+    answerC: 2.5f
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1755087523
+  lastQotdTimestamp: 1755660443
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleBundleSyntyMar25.png
-    topText: Make ANY game with these awesome Assets! (96% OFF ENDS SOON!)
-    topLink: humblebundle
-    bottomText: Learn Unity DOTS for MASSIVE Performance Boosts! (and make an RTS)
-    bottomLink: dotscourse
-  lastDynamicHeaderTimestamp: 1755087523
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle_EndsSoon.png
+    topText: All my Courses (and Games) in one Bundle! DEEP DISCOUNT ONLY THIS SUMMER!
+    topLink: summer2025bundle
+    bottomText: Get my Code Monkey Toolkit and make games BETTER and FASTER! 50%
+      OFF right now!
+    bottomLink: toolkit
+  lastDynamicHeaderTimestamp: 1755660443
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1755087523
+  websiteLatestMessageTimestamp: 1755660443
   websiteLatestVideos:
     videos:
-    - youTubeId: ZIg7VoD9ptI
-      title: The FUTURE of Unity in 2025 and BEYOND!
-    - youTubeId: W_XOZAWJF24
-      title: I made the MOST PROFITABLE Game as a Test!
-    - youTubeId: J0KMvH-yFmA
-      title: TOP 10 NEW Games, Made with Unity! (FEBRUARY 2025)
-    - youTubeId: DOSLOa7cnoE
-      title: I SHOULD have done this a long time ago, and YOU too!
-  websiteLatestVideosTimestamp: 1755087523
+    - youTubeId: HZ48JOAf-Ko
+      title: Did I STOP making TUTORIALS?
+    - youTubeId: XJsidUVPOCY
+      title: TOP 10 NEW Games, Made with Unity! (JULY 2025)
+    - youTubeId: CZ5rsOwgcl4
+      title: Unity 6.2 is HERE!
+    - youTubeId: taWg92DaORw
+      title: The 5 MUST HAVE Assets you NEED! (SALE ENDS SOON!)
+  websiteLatestVideosTimestamp: 1755660443
