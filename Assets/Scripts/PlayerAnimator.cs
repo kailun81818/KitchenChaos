@@ -11,14 +11,10 @@ public class PlayerAnimator : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
-        if (animator == null)
-        {
-            Debug.LogError("Animator component not found on PlayerAnimator.");
-        }
     }
 
     private void Update()
     {
-        animator.SetBool(IS_WALKING, player != null && player.IsWalking());
+        animator.SetBool(IS_WALKING, player.IsWalking());
     }
 }
