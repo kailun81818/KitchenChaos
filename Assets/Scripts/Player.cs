@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     {
         Vector2 inputVector = gameInput.GetMovementVectorNormalized();
 
-        Vector3 moveDir = new(inputVector.x, 0f, inputVector.y);
+        Vector3 moveDir = new Vector3(inputVector.x, 0f, inputVector.y);
         transform.position += moveDir * movespeed * Time.deltaTime;
 
         isWalking = moveDir != Vector3.zero;

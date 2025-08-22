@@ -4,7 +4,7 @@ public class GameInput : MonoBehaviour
 {
     public Vector2 GetMovementVectorNormalized()
     {
-        Vector2 inputVector = new(0f, 0f);
+        Vector2 inputVector = new Vector2(0f, 0f);
 
         if (Input.GetKey(KeyCode.W))
         {
