@@ -8,15 +8,26 @@ public class Player : MonoBehaviour
     [SerializeField] private float playerHeight = 2f;
     [SerializeField] private GameInput gameInput;
 
+    private Vector3 moveDir;
     private bool isWalking;
 
     private void Update()
     {
+        HandleMovement();
+    }
+
+    private void HandleMovement()
+    {
         Vector2 inputVector = gameInput.GetMovementVectorNormalized();
 
-        Vector3 moveDir = new Vector3(inputVector.x, 0f, inputVector.y);
+        isWalking = inputVector != Vector2.zero;
 
-        isWalking = moveDir != Vector3.zero;
+        if (!isWalking)
+        {
+            return;
+        }
+
+        moveDir = new Vector3(inputVector.x, 0f, inputVector.y);
 
         float moveDistance = moveSpeed * Time.deltaTime;
 
