@@ -880,7 +880,11 @@ MonoBehaviour:
   rotateSpeed: 10
   playerRadius: 0.65
   playerHeight: 2
+  interactDistance: 2
   gameInput: {fileID: 182612231}
+  countersLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1001 &2207022122668481210
 PrefabInstance:
   m_ObjectHideFlags: 0
