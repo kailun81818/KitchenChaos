@@ -34,13 +34,13 @@ public class Player : MonoBehaviour
             return moveDir;
         }
 
-        Vector3 moveVectorX = new Vector3(moveDir.x, 0, 0);
+        Vector3 moveVectorX = new Vector3(moveDir.x, 0f, 0f);
         if (CanMove(moveVectorX, moveDistance))
         {
             return moveVectorX;
         }
 
-        Vector3 moveVectorZ = new Vector3(0, 0, moveDir.z);
+        Vector3 moveVectorZ = new Vector3(0f, 0f, moveDir.z);
         if (CanMove(moveVectorZ, moveDistance))
         {
             return moveVectorZ;
