@@ -18,34 +18,35 @@ public class Player : MonoBehaviour
 
         isWalking = moveDir != Vector3.zero;
 
-        Vector3 moveVector = moveDir;
-
         float moveDistance = moveSpeed * Time.deltaTime;
 
-        if (!CanMove(moveVector, moveDistance))
-        {
-            Vector3 moveVectorX = new Vector3(moveDir.x, 0, 0);
-            if (CanMove(moveVectorX, moveDistance))
-            {
-                moveVector = moveVectorX;
-            }
-            else
-            {
-                Vector3 moveVectorZ = new Vector3(0, 0, moveDir.z);
-                if (CanMove(moveVectorZ, moveDistance))
-                {
-                    moveVector = moveVectorZ;
-                }
-                else
-                {
-                    moveVector = Vector3.zero;
-                }
-            }
-        }
+        Vector3 moveVector = GetMoveVector(moveDir, moveDistance);
 
         transform.position += moveVector * moveDistance;
 
         transform.forward = Vector3.Slerp(transform.forward, moveDir, rotateSpeed * Time.deltaTime);
+    }
+
+    private Vector3 GetMoveVector(Vector3 moveDir, float moveDistance)
+    {
+        if (CanMove(moveDir, moveDistance))
+        {
+            return moveDir;
+        }
+
+        Vector3 moveVectorX = new Vector3(moveDir.x, 0, 0);
+        if (CanMove(moveVectorX, moveDistance))
+        {
+            return moveVectorX;
+        }
+
+        Vector3 moveVectorZ = new Vector3(0, 0, moveDir.z);
+        if (CanMove(moveVectorZ, moveDistance))
+        {
+            return moveVectorZ;
+        }
+
+        return Vector3.zero;
     }
 
     private bool CanMove(Vector3 moveVector, float moveDistance)
