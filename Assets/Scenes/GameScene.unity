@@ -819,8 +819,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c812250e86016114e8d54d10c88fe525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 7
+  moveSpeed: 7
   rotateSpeed: 10
+  playerRadius: 0.65
+  playerHeight: 2
   gameInput: {fileID: 182612231}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
