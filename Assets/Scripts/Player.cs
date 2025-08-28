@@ -1,7 +1,16 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static Player Instance { get; private set; }
+
+    public event EventHandler<OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged;
+    public class OnSelectedCounterChangedEventArgs : EventArgs
+    {
+        public ClearCounter selectedCounter;
+    }
+
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float rotateSpeed = 10f;
     [SerializeField] private float playerRadius = 0.65f;
@@ -12,6 +21,19 @@ public class Player : MonoBehaviour
 
     private Vector3 moveDir;
     private bool isWalking;
+    private ClearCounter selectedCounter;
+
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Debug.LogError("Player instance already exists!");
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -20,23 +42,42 @@ public class Player : MonoBehaviour
 
     private void GameInput_OnInteractAction(object sender, System.EventArgs e)
     {
-        HandleInteractions();
-    }
-
-    private void HandleInteractions()
-    {
-        if (Physics.Raycast(transform.position, moveDir, out RaycastHit raycastHit, interactDistance, countersLayerMask))
+        if (selectedCounter != null)
         {
-            if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter))
-            {
-                clearCounter.Interact();
-            }
+            selectedCounter.Interact();
         }
     }
 
     private void Update()
     {
         HandleMovement();
+        selectedCounter = GetSelectedCounter();
+    }
+
+    private ClearCounter GetSelectedCounter()
+    {
+        if (Physics.Raycast(transform.position, moveDir, out RaycastHit raycastHit, interactDistance, countersLayerMask))
+        {
+            if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter))
+            {
+                SetSelectedCounterVisual(clearCounter);
+                return clearCounter;
+            }
+        }
+
+        SetSelectedCounterVisual(null);
+        return null;
+    }
+
+    private void SetSelectedCounterVisual(ClearCounter clearCounter)
+    {
+        if (clearCounter != selectedCounter)
+        {
+            OnSelectedCounterChanged?.Invoke(this, new OnSelectedCounterChangedEventArgs
+            {
+                selectedCounter = clearCounter
+            });
+        }
     }
 
     private void HandleMovement()

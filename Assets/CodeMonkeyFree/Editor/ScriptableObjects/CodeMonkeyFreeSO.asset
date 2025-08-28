@@ -14,40 +14,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1755905633
+  lastShownTimestamp: 1756265051
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1755905633
+  checkedLastUpdateTimestamp: 1756265051
   lastQOTDResponse:
-    questionId: 213
-    questionText: What is the purpose of a namespace?
-    answerA: To confuse you
-    answerB: Better performance
-    answerC: Keep your code organized
+    questionId: 215
+    questionText: What will happen on January 19, 2038 at 03:14:07?
+    answerA: Armagedon
+    answerB: End of Unix Time
+    answerC: Half-Life 3 release date
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1755905633
+  lastQotdTimestamp: 1756265051
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle_EndsSoon.png
-    topText: All my Courses (and Games) in one Bundle! DEEP DISCOUNT ONLY THIS SUMMER!
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle_EndsTomorrow.png
+    topText: All my Courses (and Games) in one Bundle! DEEP DISCOUNT ENDS TOMORROW!
     topLink: summer2025bundle
     bottomText: Get my Code Monkey Toolkit and make games BETTER and FASTER! 50%
       OFF right now!
     bottomLink: toolkit
-  lastDynamicHeaderTimestamp: 1755905633
+  lastDynamicHeaderTimestamp: 1756265051
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1755905633
+  websiteLatestMessageTimestamp: 1756265051
   websiteLatestVideos:
     videos:
+    - youTubeId: FrKLJ1nCsxY
+      title: Indie Dev makes $4 MILLION... then goes broke!
+    - youTubeId: _fymNH4flZE
+      title: TOP 10 NEW Systems and Tools AUGUST 2025! | Unity Asset Store
+    - youTubeId: YCvh88Hg5m8
+      title: TOP 8 QUICK Tips on Game Programming!
     - youTubeId: Lgmv7PYKka8
       title: Does this AI FINALLY replace Game Devs? Should YOU worry?
-    - youTubeId: x4BTbeKinSI
-      title: TOP 10 FREE NEW Assets AUGUST 2025!
-    - youTubeId: HZ48JOAf-Ko
-      title: Did I STOP making TUTORIALS?
-    - youTubeId: XJsidUVPOCY
-      title: TOP 10 NEW Games, Made with Unity! (JULY 2025)
-  websiteLatestVideosTimestamp: 1755905633
+  websiteLatestVideosTimestamp: 1756265051
