@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1757061910
+  lastShownTimestamp: 1757148382
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1757061910
+  checkedLastUpdateTimestamp: 1757148382
   lastQOTDResponse:
     questionId: 218
     questionText: How many classes should your game have?
@@ -27,18 +27,18 @@ MonoBehaviour:
     answerC: As many as needed and no more
     answerD: Just one
     answerE: 
-  lastQotdTimestamp: 1757061910
+  lastQotdTimestamp: 1757148383
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleBundleAug25RealisticEnv.png
     topText: AWESOME Realistic Environments 99% OFF!
     topLink: humblebundle
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1757061910
+  lastDynamicHeaderTimestamp: 1757148383
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1757061910
+  websiteLatestMessageTimestamp: 1757148383
   websiteLatestVideos:
     videos:
     - youTubeId: 9EOhc8Kn1E0
@@ -49,4 +49,4 @@ MonoBehaviour:
       title: BEST NEW Visual Assets to INSPIRE YOU!
     - youTubeId: JZHByNNQb3I
       title: 8 QUICK Success and Marketing Tips you NEED to know!
-  websiteLatestVideosTimestamp: 1757061910
+  websiteLatestVideosTimestamp: 1757148383

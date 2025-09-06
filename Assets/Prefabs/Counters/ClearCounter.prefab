@@ -100,7 +100,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fe2af4cea833ff46b105ab0a2324bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kitchenObjectSO: {fileID: 0}
   counterTopPoint: {fileID: 1868938267413271434}
+  secondClearCounter: {fileID: 0}
+  gameInput: {fileID: 0}
+  testing: 0
 --- !u!1001 &3522483803690401722
 PrefabInstance:
   m_ObjectHideFlags: 0

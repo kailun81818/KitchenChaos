@@ -889,6 +889,17 @@ MonoBehaviour:
   countersLayerMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &1412620861 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2727893891698467686, guid: 49839472e9d44534db2e0042fa2fc8e8, type: 3}
+  m_PrefabInstance: {fileID: 839046010}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fe2af4cea833ff46b105ab0a2324bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2207022122668481210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -902,9 +913,21 @@ PrefabInstance:
       value: ClearCounter
       objectReference: {fileID: 0}
     - target: {fileID: 2727893891698467686, guid: 49839472e9d44534db2e0042fa2fc8e8, type: 3}
+      propertyPath: testing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2727893891698467686, guid: 49839472e9d44534db2e0042fa2fc8e8, type: 3}
+      propertyPath: gameInput
+      value: 
+      objectReference: {fileID: 182612231}
+    - target: {fileID: 2727893891698467686, guid: 49839472e9d44534db2e0042fa2fc8e8, type: 3}
       propertyPath: kitchenObjectSO
       value: 
       objectReference: {fileID: 11400000, guid: 0745421fd5a78654b98434146bdcf89b, type: 2}
+    - target: {fileID: 2727893891698467686, guid: 49839472e9d44534db2e0042fa2fc8e8, type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 1412620861}
     - target: {fileID: 4899094054521161305, guid: 49839472e9d44534db2e0042fa2fc8e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
